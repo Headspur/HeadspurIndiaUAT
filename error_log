@@ -1,0 +1,6 @@
+[17-Jul-2024 16:36:03 UTC] Cron reschedule event error for hook: litespeed_task_imgoptm_pull, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"litespeed_filter","args":[],"interval":60}
+[19-Jul-2024 11:32:47 UTC] PHP Warning:  Undefined array key "id" in /home/headmilx/public_html/wp-includes/class-wp-list-util.php on line 170
+[19-Jul-2024 11:32:47 UTC] PHP Warning:  Undefined array key "id" in /home/headmilx/public_html/wp-includes/class-wp-list-util.php on line 170
+[19-Jul-2024 11:32:47 UTC] PHP Warning:  Undefined array key "id" in /home/headmilx/public_html/wp-includes/class-wp-list-util.php on line 170
+[19-Jul-2024 11:32:47 UTC] PHP Warning:  Undefined array key "id" in /home/headmilx/public_html/wp-includes/class-wp-list-util.php on line 170
+[19-Jul-2024 11:32:47 UTC] PHP Warning:  Undefined array key "id" in /home/headmilx/public_html/wp-includes/class-wp-list-util.php on line 170
