@@ -411,6 +411,40 @@ ul.custbult {
   vertical-align: middle;
   display: inline-block;
 }
+
+
+
+
+
+.serviceSalesPitch.salesPitch{
+background-color: rgba(41, 42, 51);
+padding: 20px 0;
+}
+.serviceSalesPitch.salesPitch .buy-now-btn a{
+background-color: rgba(103, 107, 203, 1);
+color: #fff;
+border-radius: 40px;
+padding: 20px 32px;
+font-size: 16px;
+font-family: 600;
+}
+
+.serviceSalesPitch.salesPitch .secure{
+  margin:0;
+}
+.serviceSalesPitch.salesPitch h2{
+margin: 10px 0 20px;
+font-size: 40px;
+line-height: 120%;
+letter-spacing: -2px;
+}
+.serviceSalesPitch.salesPitch .contentLeft img {
+  margin-top: -60px;
+}
+
+
+
+
 .faqs {
   padding-bottom: 70px;
 }
