@@ -186,7 +186,18 @@
         <img src="./images/servicepage/play.png" alt="play">
       </div>
     </div>
-    <img src="./images/servicepage/service.png" alt="Hero Image" />
+
+    <video
+  class="service-hero-video"
+  muted
+  loop
+  playsinline
+  poster="./images/servicepage/service.png"
+>
+  <source src="./images/servicepage/headspurservices.mp4" type="video/mp4" />
+</video>
+
+
   </div>
 
 
@@ -602,24 +613,7 @@
       var $mcj = jQuery.noConflict(true);
     </script>
     <!--End mc_embed_signup-->
-    <script>
-      const handleSubject = (btn) => {
-        const subjectBtn = document.getElementsByClassName("subject_btn");
-        const subjectInput = document.getElementsByClassName("subject_input");
-        subjectInput[0].value = btn.innerHTML.replace(/\s+/g, " ");
-      };
-      const links = document.querySelectorAll(".subject_btn");
 
-      links.forEach((link) => {
-        link.addEventListener("click", function () {
-          console.log(link);
-          links.forEach((e) => {
-            e.classList.remove("active");
-          });
-          this.classList.add("active");
-        });
-      });
-    </script>
 
     <script>
       const timeLine = gsap.timeline();
@@ -682,5 +676,26 @@
         });
       });
     </script>
+
+    <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const playBtn = document.querySelector(".service-play-btn");
+    const overlay = document.querySelector(".service-overlay-play");
+    const video = document.querySelector(".service-hero-video");
+
+    playBtn.addEventListener("click", () => {
+      if (video.paused) {
+        video.play();
+        overlay.style.opacity = "0";
+        overlay.style.pointerEvents = "none";
+      } else {
+        video.pause();
+        overlay.style.opacity = "1";
+        overlay.style.pointerEvents = "auto";
+      }
+    });
+  });
+</script>
+
   </body>
 </html>
