@@ -66,7 +66,7 @@
     </script> -->
   </head>
 
-  <body class="service-page">
+  <body class="service-page serviceinner-page">
     <div id="loader-wrapper">
       <div class="loader"></div>
     </div>
@@ -367,6 +367,7 @@
 
 
         <section class="why-choose-us seo-process-section">
+          <div class="seo-process-section-container">
   <div class="contain animation-container">
     <h2 class="title">Our Proven SEO Process</h2>
     <p class="subtitle">
@@ -425,6 +426,7 @@
 
 
     
+  </div>
   </div>
 </section>
 
@@ -650,17 +652,44 @@
           opacity: 0,
           delay: 0.5,
         })
-         .from(".service-subheading",{
+         .from(".service-inner-hero",{
+           y: 50,
+           opacity:0,
+        })
+         .from(".service-inner-content h1",{
            x: -50,
            opacity:0,
         })
-        .from(".service-title",{
+        .from(".service-inner-content p",{
            x: -50,
            opacity:0,
         })
-     
-       
-       
+     .from(".service-inner-stats",{
+           x: -50,
+           opacity:0,
+        })
+         .from(".service-inner-actions",{
+           x: -50,
+           opacity:0,
+        })
+        .from(".service-inner-image img",{
+           x: 50,
+           opacity:0,
+        })
+         .from(".badge-1",{
+           y: -50,
+           opacity:0,
+        }) 
+         .from(".badge-2",{
+           y: -50,
+           opacity:0,
+        }) 
+         .from(".badge-3",{
+           y: -50,
+           opacity:0,
+        })
+
+
 
       gsap.registerPlugin(ScrollTrigger);
 
